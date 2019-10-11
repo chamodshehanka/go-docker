@@ -1,11 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"net/http"
+	"fmt"
+)
 
 func main()  {
 	fmt.Println("Go Docker!!")
 
-	http.HandleFunc("/", func ()  {
+	http.HandleFunc("/", func (w http.ResponseWriter, r *http.Request)  {
 		
 	})
 }
